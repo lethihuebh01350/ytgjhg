@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6BAF4F43-D02C-410B-8A81-A3B9DE123B80}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DATABASE</RootNamespace>
+    <AssemblyName>DATABASE</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hueDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hueDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="hueDataSet.xsc">
+      <DependentUpon>hueDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="hueDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hueDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hueDataSet.xss">
+      <DependentUpon>hueDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ee33ba62-8ac3-46af-a619-8601aa0e14a1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\channels4_profile.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ee33ba62-8ac3-46af-a619-8601aa0e14a1 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bia-tap-chi-2-mat-chup-anh-thoi-trang-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thiet-ke-website-thoi-trang-chuyen-nghiep-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\98ffb957671f891b46c7876e06354c15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\98ffb957671f891b46c7876e06354c151.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mau-background-hong-nhat-trang_012201210.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mau-background-hong-nhat-trang_0122012101.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lan ngịc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sn-diep-bao-ngoc-1-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-customer-care-icon-man-symbol-on-hand-sign-png-image_1873961.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-returning-customer-icon-vectorexisting-customer-icon-user-support-practice-vector-png-image_12693166.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-clothing-icon-image_1144362.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-cartoon-line-chart-icon-download-image_1251432.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7046204.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract-gradient-pink-blue-liquid-wave-background-free-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract-gradient-pink-blue-liquid-wave-background-free-vector1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract-gradient-pink-blue-liquid-wave-background-free-vector2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sg-11134201-22100-prnxorlu64iv98.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sg-11134201-22100-prnxorlu64iv981.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ao-so-mi-mau-hong-coc-tay-5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20230418_86JDjvN9rKen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d7e573f1ea5186d362262a9326414217.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e074cb06e3bc9b3c789b7df92ad5d454.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e074cb06e3bc9b3c789b7df92ad5d4541.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\61TZu+kjbKL._AC_SL1500_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASM18-20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chup-anh-quan-ao.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chup-anh-quan-ao2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KK170-26.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2b54c9bc347baca220dcb65b174a5806.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\962c0060e40794e097c90bc659163dc7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quan-Short-Jean-Nu-tron-tua-lai-mau-hong-tt92-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vn-11134201-7qukw-lh8m2z50z9wz2c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H9f3a7e4b301a4409b9b80ab266c6e4dcY.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\84c176b2960090acd04cdda9db50d805.jpg_720x720q80.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sg-11134202-7rcdc-lts16k1029zt10.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
